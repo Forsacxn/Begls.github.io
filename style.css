@@ -172,6 +172,9 @@ a {
 }
 .cell-9 {
   background: maroon;
+
+    .container { 
+  grid-gap: 10px 10px; 
 }
     }
 }
