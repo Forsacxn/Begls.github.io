@@ -132,5 +132,9 @@ a {
   }
   .header .menu-icon {
     display: none;
+   
+    .grid-container {
+  display: grid;
+}
   }
 }
