@@ -133,8 +133,9 @@ a {
   .header .menu-icon {
     display: none;
    
-    .grid-container {
+  .grid-container {
   display: grid;
-}
-  }
+  grid-column-gap: 50px;
+  
+    }
 }
