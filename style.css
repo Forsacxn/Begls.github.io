@@ -132,49 +132,38 @@ a {
   }
   .header .menu-icon {
     display: none;
-   
-.container {
-  height: 90vh;
-  margin: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+   .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
-.cell {
-  color: white;
-  font-size: 3rem;
-  text-align: center;
-  padding: 4rem;
-}
-.cell-1 {
-  background: deepskyblue;
-}
-.cell-2 {
-  background: orangered;
-}
-.cell-3 {
-  background: royalblue;
-}
-.cell-4 {
-  background: gold;
-}
-.cell-5 {
-  background: blueviolet;
-}
-.cell-6 {
-  background: limegreen;
-}
-.cell-7 {
-  background: coral;
-}
-.cell-8 {
-  background: lightseagreen;
-}
-.cell-9 {
-  background: maroon;
 
-    .container { 
-  grid-gap: 10px 10px; 
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
     }
 }
